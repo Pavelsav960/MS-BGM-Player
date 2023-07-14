@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+.container {
+  text-align: center;
+}
+
+
+#buttonRow button {
+  padding: 15px 25px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#startButton {
+  background-color: #4CAF50;  /* A nice shade of green */
+}
+
+#startButton:hover {
+  background-color: #45a049;  /* A darker shade of green when hovering */
+}
+
+#resetButton {
+  background-color: #f44336;  /* A nice shade of red */
+}
+
+#resetButton:hover {
+  background-color: #da190b;  /* A darker shade of red when hovering */
+}
+
+#pauseButton {
+  background-color: #008CBA;  /* A nice shade of blue */
+}
+
+#pauseButton:hover {
+  background-color: #007B9A;  /* A darker shade of blue when hovering */
+}
+
+
+#countdown {
+  font-size: 48px;
+  color: #333;
+}
+
+body {
+  background-image: url('assets/images/MS_BG.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;  /* Adjusts the background image to cover the entire container */
+  font-family: 'Passero One', cursive;
+}
+
+
+#inputRow input[type="number"], #inputRow select {
+  padding: 10px;
+  font-size: 1em;  /* Change as needed */
+  border: 2px solid #d4d4d4;  /* Change as needed */
+  border-radius: 5px;  /* Change as needed */
+  gap: 10px;
+  margin-bottom: 50px;
+  background-color: #f9f9f9;  /* Change as needed */
+  width: 120px;
+}
+
+#inputRow input[type="number"]::placeholder {
+  color: #888;  /* Change as needed */
+  width: 100px;
+}
+
+

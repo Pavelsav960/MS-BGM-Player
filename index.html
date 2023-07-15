@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Simple Timer</h1>
+        <h1>Maple Timer</h1>
         <div id="inputRow">
             <input type="number" id="hoursInput" min="0" placeholder="Hours" />
             <input type="number" id="minutesInput" min="0" max="59" placeholder="Minutes" />
@@ -20,10 +20,18 @@
                 <option value="assets/audio/1-05 SleepyWood.mp3">Song 3</option>
                 <!-- Add as many songs as you want -->
             </select>
+            <select id="mapSelect">
+                <option value="map1">Map 1</option>
+                <option value="map2">Map 2</option>
+                <option value="map3">Map 3</option>
+                <option value="map4">Map 4</option>
+                <option value="map5">Map 5</option>
+                <!-- Add as many maps as you want -->
+            </select>
         </div>
         <div id="buttonRow">
             <button id="startButton">Start</button>
-            <button id="pauseButton">Pause</button>
+            <!-- <button id="pauseButton">Pause</button> -->
             <button id="resetButton">Reset</button>
         </div>
         <h1 id="countdown">00:00:00</h1>

@@ -38,14 +38,6 @@ body {
   background-color: #da190b;  /* A darker shade of red when hovering */
 }
 
-#pauseButton {
-  background-color: #008CBA;  /* A nice shade of blue */
-}
-
-#pauseButton:hover {
-  background-color: #007B9A;  /* A darker shade of blue when hovering */
-}
-
 
 #countdown {
   font-size: 48px;

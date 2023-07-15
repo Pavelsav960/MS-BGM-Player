@@ -5,6 +5,12 @@ body {
   height: 100vh;
   font-family: Arial, sans-serif;
   background-color: #f7f7f7;
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
 }
 
 .container {
@@ -40,9 +46,16 @@ body {
 
 
 #countdown {
-  font-size: 48px;
-  color: #333;
+  color: white;
+  font-size: 5em; /* adjust as needed */
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.7); */
+  border-radius: 10px;
+  padding: 20px;
+  display: inline-block;
+  /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4); */
 }
+
 
 body {
   background-image: url('assets/images/MS_BG.jpg');

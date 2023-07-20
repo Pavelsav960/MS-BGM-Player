@@ -72,7 +72,7 @@ function changeBackground(map) {
       console.log('imin');
       break;
     case 'likedSongs':
-      body.style.backgroundImage = 'url("assets/images/likedSongsBG.jpg")';
+      body.style.backgroundImage = 'url("assets/images/LikedSongsBG.jpg")';
       break;
     default:
       body.style.backgroundImage = 'none';

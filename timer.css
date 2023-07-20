@@ -13,14 +13,21 @@ body {
 
 .container {
   text-align: center;
-  width: 70%; /* adjust this value if needed */
+  background-color: rgba(255, 255, 255, 0.8); /* white with 80% opacity */
+  border-radius: 10px; /* rounded corners */
+  padding: 20px; /* some space inside the container */
+  width: 15%; /* take up 80% of its parent's width */
+  margin: 0 auto; /* center the container */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* optional: a small shadow for depth */
 }
+
 
 #selectionRow {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-bottom: 20px;
+  
 }
 
 #selectionRow select {
@@ -29,7 +36,10 @@ body {
   border: 2px solid #d4d4d4;
   border-radius: 5px;
   background-color: #f9f9f9;
+  width: 100px; /* This is the static width */
+  min-width: 150px; /* Adding a minimum width as well */
 }
+
 
 #nowPlaying {
   display: flex;

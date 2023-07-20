@@ -82,6 +82,9 @@ function changeBackground(map) {
   playPauseIcon.classList.remove('fa-pause');
   playPauseIcon.classList.add('fa-play');
   songProgressBar.value = 0; // Reset the progress bar
+  audioElement.currentTime = 0; // Reset the song time
+  currentTimeElement.textContent = '0:00'; // Reset the displayed current time
+
   
 }
 
@@ -97,7 +100,9 @@ function updateSongList(map) {
   
   if (songList.length > 0) {
     audioElement.src = songList[0];  // Set the audio source to the first song in the list
-    songNameDisplay.textContent = 'Currently Playing: ' + songSelect.options[songSelect.selectedIndex].text;
+    audioElement.currentTime = 0; // Reset the song time
+    currentTimeElement.textContent = '0:00'; // Reset the displayed current time
+    songNameDisplay.textContent = '' + songSelect.options[songSelect.selectedIndex].text;
 
     if (likedSongs.includes(songSelect.value)) {
       likeButton.classList.add('liked');
@@ -137,7 +142,7 @@ function prevSong() {
   }
   songSelect.selectedIndex = currentSongIndex;
   audioElement.src = songSelect.value;
-  songNameDisplay.textContent = 'Currently Playing: ' + songSelect.options[songSelect.selectedIndex].text;
+  songNameDisplay.textContent = '' + songSelect.options[songSelect.selectedIndex].text;
 
   if (likedSongs.includes(songSelect.value)) {
     likeButton.classList.add('liked');
@@ -156,7 +161,7 @@ function nextSong() {
   }
   songSelect.selectedIndex = currentSongIndex;
   audioElement.src = songSelect.value;
-  songNameDisplay.textContent = 'Currently Playing: ' + songSelect.options[songSelect.selectedIndex].text;
+  songNameDisplay.textContent = '' + songSelect.options[songSelect.selectedIndex].text;
 
   if (likedSongs.includes(songSelect.value)) {
     likeButton.classList.add('liked');
@@ -176,7 +181,7 @@ function formatTime(seconds) {
 function onSongSelectChange() {
   currentSongIndex = songSelect.selectedIndex; // Update the current song index
   audioElement.src = songSelect.value; // Update the source of the audio element to the selected song
-  songNameDisplay.textContent = 'Currently Playing: ' + songSelect.options[songSelect.selectedIndex].text;
+  songNameDisplay.textContent = '' + songSelect.options[songSelect.selectedIndex].text;
   if (likedSongs.includes(songSelect.value)) {
     likeButton.classList.add('liked');
   } else {
@@ -207,6 +212,7 @@ function likeSong() {
       // After updating the song list, pause the song, reset progress bar, and change play/pause button to "play"
       audioElement.pause();
       songProgressBar.value = 0;
+      
       playPauseIcon.classList.remove('fa-pause');
       playPauseIcon.classList.add('fa-play');
     }

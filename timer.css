@@ -3,7 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  font-family: Arial, sans-serif;
+  font-family: 'Passero One', cursive;
   background-color: #f7f7f7;
   background-size: cover;
   background-position: center center;
@@ -13,70 +13,68 @@ body {
 
 .container {
   text-align: center;
+  width: 70%; /* adjust this value if needed */
+}
+
+#selectionRow {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#selectionRow select {
+  padding: 10px;
+  font-size: 1em;
+  border: 2px solid #d4d4d4;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+#nowPlaying {
+  display: flex;
+  flex-direction: column; /* changes the layout to a vertical stack */
+  justify-content: center;
+  align-items: center; /* centers the content horizontally */
+  width: 100%;
+  text-align: center; /* centers the text */
 }
 
 
-#buttonRow button {
-  padding: 15px 25px;
-  font-size: 1em;
+#controlsRow {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* adjust this value if needed */
+  margin: 15px 0; /* adjust this value if needed */
+}
+
+#controlsRow button {
+  padding: 15px;
   border: none;
-  border-radius: 5px;
+  border-radius: 50%;
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  background-color: #4CAF50;
 }
 
-#startButton {
-  background-color: #4CAF50;  /* A nice shade of green */
+#controlsRow button:hover {
+  background-color: #45a049;
 }
 
-#startButton:hover {
-  background-color: #45a049;  /* A darker shade of green when hovering */
+#progressBarContainer {
+  width: 100%;
+  margin-bottom: 15px; /* adjust this value if needed */
 }
 
-#resetButton {
-  background-color: #f44336;  /* A nice shade of red */
-}
-
-#resetButton:hover {
-  background-color: #da190b;  /* A darker shade of red when hovering */
-}
-
-
-#countdown {
-  color: white;
-  font-size: 5em; /* adjust as needed */
-  text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.5);
-  /* background: rgba(0, 0, 0, 0.7); */
-  border-radius: 10px;
-  padding: 20px;
-  display: inline-block;
-  /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4); */
-}
-
-
-body {
-  background-image: url('assets/images/MS_BG.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;  /* Adjusts the background image to cover the entire container */
-  font-family: 'Passero One', cursive;
-}
-
-
-#inputRow input[type="number"], #inputRow select {
-  padding: 10px;
-  font-size: 1em;  /* Change as needed */
-  border: 2px solid #d4d4d4;  /* Change as needed */
-  border-radius: 5px;  /* Change as needed */
+#volumeControl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
-  margin-bottom: 50px;
-  background-color: #f9f9f9;  /* Change as needed */
-  width: 120px;
 }
 
-#inputRow input[type="number"]::placeholder {
-  color: #888;  /* Change as needed */
-  width: 100px;
+#likeButton.liked {
+  color: red;
 }
-
 

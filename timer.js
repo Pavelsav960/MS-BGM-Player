@@ -84,9 +84,9 @@ function changeBackground(map) {
   songProgressBar.value = 0; // Reset the progress bar
   audioElement.currentTime = 0; // Reset the song time
   currentTimeElement.textContent = '0:00'; // Reset the displayed current time
-
-  
 }
+
+//commit changes
 
 
 function updateSongList(map) {

@@ -13,7 +13,7 @@ body {
 
 .container {
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.8); /* white with 80% opacity */
+  background-color: rgba(255, 255, 255, 0.432); /* white with 80% opacity */
   border-radius: 10px; /* rounded corners */
   padding: 20px; /* some space inside the container */
   width: 15%; /* take up 80% of its parent's width */
@@ -62,15 +62,16 @@ body {
   padding: 15px;
   border: none;
   border-radius: 50%;
-  color: white;
+  color: white; /* Text color */
   cursor: pointer;
   transition: background-color 0.3s ease;
-  background-color: #4CAF50;
+  background-color: #000000c2; /* Medium gray */
 }
 
 #controlsRow button:hover {
-  background-color: #45a049;
+  background-color: #5a6268; /* Darker gray for hover */
 }
+
 
 #progressBarContainer {
   width: 100%;
@@ -87,4 +88,6 @@ body {
 #likeButton.liked {
   color: red;
 }
+
+
 

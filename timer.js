@@ -275,5 +275,5 @@ if (savedMap) {
   changeBackground(savedMap);
   updateSongList(savedMap);
 } else {
-  updateSongList('map1');  // Default to 'map1' if there's no saved map
+  updateSongList('map1');  // Default to 'map1' if there's no saved map kkk
 }

@@ -2,6 +2,19 @@
 
 A web application that allows users to explore and play iconic MapleStory background music categorized by maps. Users can dynamically change the background, navigate between songs, and save their favorites. The app includes an interactive UI with responsive audio controls.
 
+
+
+## Demo 🎥
+You can try the live application here: [MapleStory Playlist](https://pavelsav960.github.io/MS-BGM-Player/)
+
+
+
+## Screenshots 📸
+![Screenshot of Ellinia](assets/Screenshots/EliniaScreenshot.png)
+![Main Page Screenshot](assets/Screenshots/LudiScreenshot.png)
+
+
+
 ## Features ✨
 
 - **Dynamic Backgrounds**: Each map has a unique background image.
@@ -10,13 +23,6 @@ A web application that allows users to explore and play iconic MapleStory backgr
 - **Like Songs**: Save your favorite tracks for quick access later.
 - **Progress Tracking**: View and interact with the song progress bar.
 - **Local Storage**: Remembers your liked songs and last-selected map.
-
-## Demo 🎥
-You can try the live application here: [MapleStory Playlist](https://pavelsav960.github.io/MS-BGM-Player/)
-
-## Screenshots 📸
-![Screenshot of Ellinia](assets/Screenshots/EliniaScreenshot.png)
-![Main Page Screenshot](assets/Screenshots/LudiScreenshot.png)
 
 
 

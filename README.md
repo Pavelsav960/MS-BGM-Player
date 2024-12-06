@@ -15,7 +15,7 @@ A web application that allows users to explore and play iconic MapleStory backgr
 You can try the live application here: [MapleStory Playlist](https://pavelsav960.github.io/MS-BGM-Player/)
 
 ## Screenshots 📸
-![Main Page Screenshot](assets/Screenshots/LudiScreenshot.png)
+![Screenshot of Ellinia](assets/screenshots/EliniaScreenshot.png)
 ![Main Page Screenshot](assets/screenshots/LudiScreenshot.png)
 
 
